@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Buku Online</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <nav class="bg-blue-500 p-4 text-white">
+      <div class="container mx-auto">
+        <a href="#" class="text-2xl font-bold">Toko Buku Samudera</a>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="hover:text-gray-300">Beranda</a>
+          <a href="#" class="hover:text-gray-300">Katalog</a>
+          <a href="#" class="hover:text-gray-300">Tentang Kami</a>
+          <a href="#" class="hover:text-gray-300">Kontak</a>
+        </div>
+      </div>
+    </nav>
+    <section class="bg-gray-800 text-white py-20">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4">Selamat Datang di Toko Samudera</h1>
+        <p class="text-lg mb-8">
+          Yuk, temukan berbagai koleksi buku menarik, asik, dan tentunya
+          kualitas terbaik dari kami.
+        </p>
+        <a
+          href="https://iprice.co.id/gramedia/hobi/buku/"
+          class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full text-lg"
+          >Jelajahi Katalog</a
+        >
+        <button
+          onclick="img()"
+          class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full text-lg"
+        >
+          Lihat Perubahan
+        </button>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Buku Pilihan</h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              id="gantiGambar"
+              src="https://lzd-img-global.slatic.net/g/p/1fc68ca94d9cc188a6e8f1687ec157b0.jpg_720x720q80.jpg"
+              alt="Book 1"
+              class="w-full h-48 object-cover mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">
+              Harry Potter and the Sorcerer's Stone
+            </h3>
+            <p class="text-gray-600">Penulis: J. K. Rowling</p>
+            <p class="text-gray-800 mt-2">
+              Harry Potter dan Batu Bertuah adalah novel fantasi karangan
+              penulis Inggris J. K. Rowling yang merupakan novel pertama dalam
+              seri Harry Potter dan novel debut Rowling.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline mt-4 block"
+              >Lihat Detail</a
+            >
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              id="gantiLatar"
+              src="https://down-id.img.susercontent.com/file/3fe33dbc4edd820ee3bc2eb64299a571"
+              alt="Book 2"
+              class="w-full h-48 object-cover mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Sunset Bersama Rosie</h3>
+            <p class="text-gray-600">Penulis: Tere Liye</p>
+            <p class="text-gray-800 mt-2">
+              Sunset Bersama Rosie mengisahkan tentang pria bernama Tegar yang
+              bersahabat dengan Rosie. Sejak kecil atau tepatnya 20 tahun mereka
+              bermain bersama, hingga perasaan cinta Tegar muncul kepada Rosie.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline mt-4 block"
+              >Lihat Detail</a
+            >
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              id="gantiFoto"
+              src="https://down-id.img.susercontent.com/file/60c0450b2ee9300474df3cf202a7f343"
+              alt="Book 3"
+              class="w-full h-48 object-cover mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Atomic Habits</h3>
+            <p class="text-gray-600">Penulis: James Clear</p>
+            <p class="text-gray-800 mt-2">
+              Atomic Habits adalah buku best seller internasional yang berisi
+              tentang cara membangun kebiasaan baik dan menghilangkan kebiasaan
+              buruk. Dalam buku ini, James menyatakan, jika kita ingin mencapai
+              sebuah tujuan, berfokus pada tujuan tersebut tidaklah cukup.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline mt-4 block"
+              >Lihat Detail</a
+            >
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <img
+              id="gantiNovel"
+              src="https://img.wattpad.com/d208098c6ad02e33616970fc8e9bcf0b5d850e25/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f68765445304453515a6b645636413d3d2d3930383237343439382e313631616534336665623231653935373539343939353637373037392e6a7067?s=fit&w=720&h=720"
+              alt="Book 4"
+              class="w-full h-48 object-cover mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Tujuh Kelana</h3>
+            <p class="text-gray-600">Penulis: Nellaneva</p>
+            <p class="text-gray-800 mt-2">
+              Novel Tujuh Kelana merupakan karya yang ditulis oleh penulis
+              cerita fantasi asal Indonesia bernama Nellaneva. Novel ini
+              menceritakan tentang Zarra dan Dion, adalah dua manusia yang tidak
+              sengaja menemukan permata merah yang ternyata adalah fragmen kunci
+              untuk sebuah gerbang.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline mt-4 block"
+              >Lihat Detail</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2023 Toko Buku Online. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
